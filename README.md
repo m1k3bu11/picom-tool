@@ -27,7 +27,9 @@ opacity-rule = [
 Notice the focused then unfocused lines and the tabs before the lines.
 
 If you wish to bind this to a key in i3 use this format in i3's config file:
+```
 bindsym --release $mod+t exec --no-startup-id notify-send "$(bash ~/.config/picom-tool.sh)"
+```
 
 If your picom.conf file is not located in ~/.config/ you will have to edit the bash script variable mydir. Transfoc and transunfoc variables are the values for the transparency for focused and not focused windows and can be changed. 
 
